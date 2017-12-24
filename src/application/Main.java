@@ -2,6 +2,7 @@ package application;
 	
 import java.io.IOException;
 
+import application.controllers.AvionOverviewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -32,7 +33,7 @@ public class Main extends Application {
 	public void initRootLayout() {
 	    try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/templates/RootLayout.fxml"));
+            loader.setLocation(Main.class.getResource("/templates/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
 
             Scene scene = new Scene(rootLayout);
@@ -50,6 +51,7 @@ public class Main extends Application {
             AnchorPane avionOverview = (AnchorPane) loader.load();
 
             rootLayout.setCenter(avionOverview);
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
