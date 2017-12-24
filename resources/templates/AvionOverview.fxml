@@ -11,14 +11,14 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.AvionOverviewController">
+<AnchorPane prefHeight="350.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.AvionOverviewController">
    <children>
-      <TableView fx:id="avionTable" layoutX="366.0" layoutY="13.0" prefHeight="274.0" prefWidth="420.0">
+      <TableView fx:id="avionTable" layoutX="366.0" layoutY="13.0" prefHeight="301.0" prefWidth="455.0">
         <columns>
-          <TableColumn prefWidth="95.0" text="Code" />
-          <TableColumn prefWidth="86.0" text="Nom" />
-            <TableColumn prefWidth="89.0" text="Capacité" />
-            <TableColumn prefWidth="149.0" text="Localisation" />
+          <TableColumn fx:id="codeColumn" prefWidth="95.0" text="Code" />
+          <TableColumn fx:id="nomColumn" prefWidth="86.0" text="Nom" />
+            <TableColumn fx:id="capaciteColumn" prefWidth="89.0" text="Capacité" />
+            <TableColumn fx:id="localisationColumn" prefWidth="149.0" text="Localisation" />
         </columns>
       </TableView>
       <GridPane layoutX="14.0" layoutY="13.0" prefHeight="204.0" prefWidth="316.0">
